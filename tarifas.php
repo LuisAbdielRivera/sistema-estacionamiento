@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tarifas</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
-  </head>
-  <body>
-    <h1>Tarifas</h1>
-    <form id="frmtarifa" name="frmtarifa">
-        <fieldset>
-            <label for="tarifa">Tarifa: <input id="tarifa" name="tarifa" type="number" required /></label>
-            <label for="monto">Monto: <input id="monto" name="monto" type="text" required /></label>
-        </fieldset>
-        <input onclick="registrarTarifa();" type="submit" value="Guardar" />
-    </form>
-    <?php
-      include 'consultartarifa.php';
-    ?>
-  </body>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Tarifas</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form id="frmtarifa" name="frmtarifa">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="tarifa">Tarifa:</label>
+                        <input id="tarifa" name="tarifa" type="number" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="monto">Monto:</label>
+                        <input id="monto" name="monto" type="text" class="form-control" required />
+                    </div>
+                </fieldset>
+                <input type="submit" onclick="registrarTarifa();" class="btn btn-primary btn-block" value="Guardar" />
+            </form>
+        </div>
+    </div>
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-6">
+            <?php include 'consultartarifa.php'; ?>
+        </div>
+    </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

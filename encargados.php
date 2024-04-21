@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Encargados</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Encargados</h1>
-    <form id="frmencargados" name="frmencargados">
-      <fieldset>
-        <label for="nombre">Nombre: <input id="nombre" name="nombre" type="text" required /></label>
-        <label for="direccion">Dirección:
-          <textarea id="direccion" name="direccion" rows="3" cols="30" placeholder="Ingresa la dirección"></textarea>
-        </label>
-        <label for="telefono">Numero de Telefono: 
-            <input id="telefono" name="telefono" type="number" required /></label>
-        <label for="correo">Email: <input id="correo" name="correo" type="email" required /></label>
-        </fieldset>
-        <fieldset>
-        <label for="usuario">Usuario: <input id="usuario" name="usuario" type="text" required /></label>
-        <label for="contrasena">Contraseña: <input id="contrasena" name="contrasena" type="password" required /></label>
-        </fieldset>
-      <input onclick="registrarEncargado();" type="submit" value="Guardar" />
-    </form>
-    <?php
-      include 'consultarencargado.php'
-    ?>
-  </body>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Encargados</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form id="frmencargados" name="frmencargados">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" name="nombre" type="text" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <textarea id="direccion" name="direccion" class="form-control" rows="3" cols="30" placeholder="Ingresa la dirección"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Numero de Telefono:</label>
+                        <input id="telefono" name="telefono" type="number" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Email:</label>
+                        <input id="correo" name="correo" type="email" class="form-control" required />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input id="usuario" name="usuario" type="text" class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña:</label>
+                        <input id="contrasena" name="contrasena" type="password" class="form-control" required />
+                    </div>
+                </fieldset>
+                <input onclick="registrarEncargado();" type="submit" class="btn btn-primary btn-block" value="Guardar" />
+            </form>
+        </div>
+    </div>
+    <div class="row mt-4 justify-content-center">
+        <?php include 'consultarencargado.php'; ?>
+    </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

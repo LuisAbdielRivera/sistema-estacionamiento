@@ -69,54 +69,57 @@
     ?>
 </div>
 
-<div class="modal text-dark" id="modalPromociones">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Registrar uso de estacionamiento</h4>
-                <button type="button" class="close" data-dismiss="modal" onclick="cerrarModal();">x</button>
-            </div>
-            <div class="modal-body">
-                <form id="frmregistrar" name="frmregistrar">
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="Id_vehiculo">Vehiculo
-                            <select id="Id_vehiculo" name="Id_vehiculo" class="w-50">
-                                <option value="">-- Selecciona un Vehiculo --</option>
-                                <?php
-                                    include 'conexion.php';
-                                    $query="SELECT Id_vehiculo, matricula, tipo FROM vehiculo";
-                                    $ejecutar=$conexion->query($query);
-                                    while($result=$ejecutar->fetch_array()){
-                                      echo "<option value='".$result['Id_vehiculo']."'>".$result['matricula']." - ".$result['tipo']."</option>";
-                                    }
-                                ?>
-                            </select>
-                        </label>
-                    </div>
+<div class="modal fade" id="modalPromociones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registrar uso de estacionamiento</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cerrarModal();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="frmregistrar" name="frmregistrar">
+          <div class="form-group text-center">
+            <label for="Id_vehiculo">Vehiculo:</label>
+            <select id="Id_vehiculo" name="Id_vehiculo" class="form-control w-50 mx-auto">
+              <option value="">-- Selecciona un Vehiculo --</option>
+              <?php
+                include 'conexion.php';
+                $query="SELECT Id_vehiculo, matricula, tipo FROM vehiculo";
+                $ejecutar=$conexion->query($query);
+                while($result=$ejecutar->fetch_array()){
+                  echo "<option value='".$result['Id_vehiculo']."'>".$result['matricula']." - ".$result['tipo']."</option>";
+                }
+              ?>
+            </select>
+          </div>
 
-                    <div class="form-outline mb-4">
-                        <label for="Id_cajon" class="form-label">Cajon:</label>
-                        <input type="text" name="Id_cajon" id="Id_cajon" value="" class="form-control w-50" readonly="readonly">
-                    </div>
+          <div class="form-group text-center">
+            <label for="Id_cajon">Cajon:</label>
+            <input type="text" name="Id_cajon" id="Id_cajon" value="" class="form-control w-50 mx-auto" readonly="readonly">
+          </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="Id_tarifa">Tarifa
-                            <select id="Id_tarifa" name="Id_tarifa" class="w-50">
-                                <option value="">-- Selecciona una Tarifa --</option>
-                                <?php
-                                    include 'conexion.php';
-                                    $query="SELECT Id_tarifa, tarifa FROM tarifa";
-                                    $ejecutar=$conexion->query($query);
-                                    while($result=$ejecutar->fetch_array()){
-                                      echo "<option value='".$result['Id_tarifa']."'>".$result['tarifa']."</option>";
-                                    }
-                                ?>
-                            </select>
-                        </label>
-                    </div>
-                    <input onclick="registrarRegistro();" type="submit" value="Guardar" />
-                </form>
-            </div>
-        </div>
+          <div class="form-group text-center">
+            <label for="Id_tarifa">Tarifa:</label>
+            <select id="Id_tarifa" name="Id_tarifa" class="form-control w-50 mx-auto">
+              <option value="">-- Selecciona una Tarifa --</option>
+              <?php
+                include 'conexion.php';
+                $query="SELECT Id_tarifa, tarifa FROM tarifa";
+                $ejecutar=$conexion->query($query);
+                while($result=$ejecutar->fetch_array()){
+                  echo "<option value='".$result['Id_tarifa']."'>".$result['tarifa']."</option>";
+                }
+              ?>
+            </select>
+          </div>
+          <div class="text-center">
+            <input onclick="registrarRegistro();" type="submit" class="btn btn-primary mt-3" value="Guardar" />
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+</div>
 </div>
