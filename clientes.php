@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <button type="button" onclick="registrarCliente();" class="btn btn-primary d-block mx-auto">Guardar</button>
+                <input onclick="registrarCliente();" class="btn btn-primary d-block mx-auto" type='submit' value='Guardar'></input>
             </form>
         </div>
     </div>

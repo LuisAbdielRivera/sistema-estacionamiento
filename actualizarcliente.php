@@ -41,8 +41,8 @@
                         </div>
                     </div>
                 </fieldset>
-                <a type="button" class="btn btn-warning btn-block" onclick="actualizarCliente(<?php echo $Id_cliente;?>);">Actualizar</a>
-                <a type="button" class="btn btn-danger btn-block" onclick="cancelar();">Cancelar</a>
+                <input class="btn btn-warning btn-block" onclick="actualizarCliente(<?php echo $Id_cliente;?>);" type="submit" value="Actualizar"></input>
+                <input class="btn btn-danger btn-block" onclick="cancelar();" type="submit" value="Cancelar"></input>
             </form>
         </div>
     </div>
