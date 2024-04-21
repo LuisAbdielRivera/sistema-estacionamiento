@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="row mt-4 justify-content-center">
-        <?php include "consultarcliente.php"; ?>
+        <?php include "./consulta-datos/consultarcliente.php"; ?>
     </div>
 </div>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

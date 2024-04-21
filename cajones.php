@@ -24,7 +24,7 @@
     </div>
     <div class="row mt-4 justify-content-center">
         <div class="col-md-6">
-            <?php include "consultarcajones.php"; ?>
+            <?php include "./consulta-datos/consultarcajones.php"; ?>
         </div>
     </div>
 </div>
