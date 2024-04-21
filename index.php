@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-12">
                     <div class="d-grid">
-                        <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit">Iniciar Sesion</button>
+                        <button class="btn btn-lg btn-primary rounded-0 fs-6" type="submit">Iniciar Sesion</button>
                     </div>
                     </div>
                 </div>
