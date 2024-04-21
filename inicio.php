@@ -6,18 +6,22 @@
     $dataTemp=$data->fetch_array();
 ?>
 
-<h4>Bienvenido la temperatura de hoy es de: <b>
-    <?php echo $dataTemp['temperatura'];?>º </b> y la humedad actual esta en: <b><?php echo $dataTemp['humedad'];?>% 
+<div class="d-flex justify-content-end mb-3">
+    <div>
+        <h4>
+            <?php echo $dataTemp['temperatura'];?>º <img src="./imagenes/icons8-temperatura-96.png" width="25" alt="icon-humedad"> <?php echo $dataTemp['humedad'];?>% <img src="./imagenes/icons8-humedad-100.png" width="25" alt="icon-humedad"> 
 
-<?php
-    $query="SELECT * FROM fotoresistencia ORDER BY id DESC LIMIT 1";
-    $dataLigth=$conexion->query($query);
-    $dataVerify=$dataLigth->fetch_array();
-    echo $dataVerify['estatus'] ? "<img src='imagenes/Encendido.png' style='height:40px'>" : "<img src='imagenes/Apagado.png' style='height:40px'>" ;
-?>
+            <?php
+                $query="SELECT * FROM fotoresistencia ORDER BY id DESC LIMIT 1";
+                $dataLigth=$conexion->query($query);
+                $dataVerify=$dataLigth->fetch_array();
+                echo $dataVerify['estatus'] ? "<img src='imagenes/light.png' width='25'>" : "<img src='imagenes/low.png' width='25'>" ;
+            ?>
+        </h4>
+    </div>
+</div>
 
-</h4>
-    
+
 <div class="row row-cols-1 row-cols-md-5 g-4">
     <?php
         $query="SELECT Id_cajon, numero, status, ocupado FROM cajon ORDER BY numero";
@@ -44,17 +48,17 @@
                         echo "<p class='card-text'>Cajon ocupado</p>";
                         echo "<div class='row'><div class='col-md-6'><a href='#' class='btn btn-warning text-white' onclick='cerrarCajon(".$result['Id_cajon'].")'>Salir</a></div>";
                         if($result['ocupado']==0){
-                            echo "<div class='col-md-4'><img src='./imagenes/boton-v.jpg' width='50'/></div></div>";
+                            echo "<div class='col-md-4'><img src='./imagenes/boton-v.png' width='50'/></div></div>";
                         }else{
-                            echo "<div class='col-md-4'><img src='./imagenes/boton-r.jpg' width='50'/></div></div>";
+                            echo "<div class='col-md-4'><img src='./imagenes/boton-r.png' width='50'/></div></div>";
                         }
                     }else{
                         echo "<p class='card-text'>No existe un vehiculo</p>";
                         echo "<div class='row'><div class='col-md-6'><a href='#' class='btn btn-info text-white' onclick='abrirModal(".$result['Id_cajon'].")'>Ocupar</a></div>";
                         if($result['ocupado']==0){
-                            echo "<div class='col-md-4'><img src='./imagenes/boton-v.jpg' width='50'/></div></div>";
+                            echo "<div class='col-md-4'><img src='./imagenes/boton-v.png' width='50'/></div></div>";
                         }else{
-                            echo "<div class='col-md-4'><img src='./imagenes/boton-r.jpg' width='50'/></div></div>";
+                            echo "<div class='col-md-4'><img src='./imagenes/boton-r.png' width='50'/></div></div>";
                         }
                     }
                     echo "
