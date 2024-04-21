@@ -12,7 +12,7 @@
     <script src="scripts/js/funciones.js"></script>
 </head>
 <body>
-    <section class="py-3 py-md-5 py-xl-8">
+    <section class="py-2 py-md-5 py-xl-8">
     <div class="container">
         <div class="row">
         <div class="col-12">

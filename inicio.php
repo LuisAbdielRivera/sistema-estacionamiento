@@ -24,7 +24,7 @@
         $ejecutar=$conexion->query($query);
         while ($result=$ejecutar->fetch_array()) {
             echo "<div class='col'>
-                    <div class='card m-1' style='width: 14rem;'>
+                    <div class='card m-1 shadow p-3 mb-5 bg-body' style='width: 14rem;'>
                         <img src='./imagenes/logo.jpg' class='card-img-top' alt='...'>
                         <div class='card-body'>
                             <h5 class='card-title'>Cajon ".$result['numero']."</h5>";
