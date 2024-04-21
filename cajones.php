@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cajones</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -18,7 +13,7 @@
                     <label for="numero">Numero de Cajones:</label>
                     <input id="numero" name="numero" type="number" class="form-control" required />
                 </div>
-                <a type="button" onclick="registrarCajon();" class="btn btn-primary d-block mx-auto">Guardar</a>
+                <input type='submit' value='Guardar' onclick="registrarCajon();" class="btn btn-primary d-block mx-auto"/>
             </form>
         </div>
     </div>

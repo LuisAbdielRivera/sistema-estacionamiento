@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Actualizar Cliente</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>

@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Registro</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
     <style>
         .centered-form {
             text-align: center;
@@ -66,7 +61,7 @@
                         ?>
                     </select>
                 </div>
-                <a type="button" onclick="registrarRegistro();" class="btn btn-primary mt-4">Guardar</a>
+                <input type='submit' value='Guardar' onclick="registrarRegistro();" class="btn btn-primary mt-4"/>
             </form>
         </div>
     </div>

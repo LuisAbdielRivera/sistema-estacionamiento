@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Clientes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -31,7 +29,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <input onclick="registrarCliente();" class="btn btn-primary d-block mx-auto" type='submit' value='Guardar'></input>
+                <input onclick="registrarCliente();" class="btn btn-primary d-block mx-auto" type='submit' value='Guardar'/>
             </form>
         </div>
     </div>
