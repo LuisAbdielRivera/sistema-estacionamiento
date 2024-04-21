@@ -21,6 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <div  class="container-fluid" style="height: 81px;">
+<div class="row">
+            <div class="col-md-12">
     <ul class="nav nav-tabs h-75">
         <li class="nav-item">
             <a href="menu.php" class="nav-link active h-75" aria-current="page">
@@ -102,12 +104,15 @@
         </li>
     </ul>
 </div>
-<!-- Aqui va el contenido -->
-    <div class="p-2 w-100 bd-highlight" id="contenido">
-        <?php
-            include 'inicio.php'
-        ?>
+</div>
+<div class="row">
+            <div class="col-md-12">
+                <!-- Aquí va el contenido -->
+                <div id="contenido" class="p-2">
+                    <?php include 'inicio.php'; ?>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>

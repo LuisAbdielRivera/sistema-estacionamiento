@@ -17,6 +17,7 @@
         <div class="row">
         <div class="col-12">
             <div class="mb-5">
+            <img src="./imagenes/logo.jpg" class="rounded mx-auto d-block"  width="100" alt="logo">
             <h2 class="display-5 fw-bold text-center">Inicia sesión</h2>
             <p class="text-center m-0">Sistema de Estacionamiento</p>
             </div>
