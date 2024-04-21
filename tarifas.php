@@ -17,7 +17,7 @@
         <input onclick="registrarTarifa();" type="submit" value="Guardar" />
     </form>
     <?php
-      include '../consulta-datos/consultartarifa.php';
+      include 'consultartarifa.php';
     ?>
   </body>
 </html>

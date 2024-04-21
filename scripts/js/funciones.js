@@ -157,7 +157,7 @@ function actualizarCliente(Id_cliente){
 
     $.post("updatecliente.php",{"Id_cliente": Id_cliente, "nombre": nombre, "direccion":direccion, "telefono":telefono, "correo":correo }, function(result){
         msjguardar(result)
-        cargarDiv($("#result"), 'consultarcliente.php')
+        cargarDiv($("#result"), '../../consulta-datos/consultarcliente.php')
     })
 }
 

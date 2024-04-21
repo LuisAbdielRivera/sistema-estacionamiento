@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Clientes</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts/js/jquery.min.js"></script>
-    <script src="../scripts/js/funciones.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -39,7 +36,7 @@
         </div>
     </div>
     <div class="row mt-4 justify-content-center">
-        <?php include "../consulta-datos/consultarcliente.php"; ?>
+        <?php include "consultarcliente.php"; ?>
     </div>
 </div>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
