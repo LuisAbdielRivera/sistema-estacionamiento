@@ -8,7 +8,7 @@
         </thead>
         <tbody>
             <?php
-                include 'conexion.php';
+                include '../conexion.php';
                 $query="SELECT Id_cajon, numero FROM cajon";
                 $ejecutar=$conexion->query($query);
                 while($result=$ejecutar->fetch_array()){

@@ -10,7 +10,7 @@
         </thead>
         <tbody>
             <?php
-                include 'conexion.php';
+                include '../conexion.php';
                 $query="SELECT Id_tarifa, tarifa, monto FROM tarifa";
                 $ejecutar=$conexion->query($query);
                 while($result=$ejecutar->fetch_array()){

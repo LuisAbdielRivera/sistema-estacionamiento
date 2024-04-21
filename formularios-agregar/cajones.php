@@ -5,7 +5,7 @@
     <title>Cajones</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
+    <script src="../scripts/js/funciones.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     </div>
     <div class="row mt-4 justify-content-center">
         <div class="col-md-6">
-            <?php include "./consulta-datos/consultarcajones.php"; ?>
+            <?php include "../consulta-datos/consultarcajones.php"; ?>
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts/js/jquery.min.js"></script>
-    <script src="scripts/js/funciones.js"></script>
+    <script src="../scripts/js/funciones.js"></script>
     <style>
         .centered-form {
             text-align: center;
@@ -29,7 +29,7 @@
                     <select class="form-control" id="Id_vehiculo" name="Id_vehiculo">
                         <option value="">-- Selecciona un Vehiculo --</option>
                         <?php
-                        include 'conexion.php';
+                        include '../conexion.php';
                         $query="SELECT Id_vehiculo, matricula, tipo FROM vehiculo";
                         $ejecutar=$conexion->query($query);
                         while($result=$ejecutar->fetch_array()){

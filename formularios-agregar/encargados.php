@@ -24,7 +24,7 @@
       <input onclick="registrarEncargado();" type="submit" value="Guardar" />
     </form>
     <?php
-      include 'consultarencargado.php'
+      include '../consulta-datos/consultarencargado.php'
     ?>
   </body>
 </html>

@@ -12,7 +12,7 @@
         </thead>
         <tbody>
             <?php
-                include 'conexion.php';
+                include '../conexion.php';
                 $query="SELECT Id_empleado, nombre, direccion, telefono, correo FROM empleados";
                 $ejecutar=$conexion->query($query);
                 while($result=$ejecutar->fetch_array()){

@@ -21,7 +21,7 @@
         <select id="Id_cliente" name="Id_cliente">
           <option value="">-- Seleccione un cliente --</option>
               <?php
-              include 'conexion.php';
+              include '../conexion.php';
               $query="SELECT Id_cliente, nombre FROM cliente";
               $ejecutar=$conexion->query($query);
               while($result=$ejecutar->fetch_array()){
@@ -36,7 +36,7 @@
     </form>
     <div class="container">
       <?php
-        include "consultarvehiculo.php";
+        include "../consulta-datos/consultarvehiculo.php";
       ?>
     </div>
   </body>
